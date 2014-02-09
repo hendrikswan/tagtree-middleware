@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body 
+    ul#navigation
+      li
+        a(href="/") Home
+      li
+        a(href="/about") About
+      li
+        a(href="/contact") Contact
+
+    p Random quote: "#{quote.body}" - #{quote.author}
+
+    block content
