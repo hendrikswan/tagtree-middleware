@@ -11,17 +11,6 @@ var path = require('path');
 var app = express();
 
 
-app.use(function(req, res, next){
-  var quotes = [
-    {body: 'We cannot be more sensitive to pleasure without being more sensitive to pain.', author: 'Alan Watts'},
-    {body: 'Welcome to tagtree.tv!', author: 'Hendrik Swanepoel'},
-    {body: 'Design is not just what it looks like and feels like. Design is how it works.', author: 'Steve Jobs'}
-  ];
-
-  res.locals.quote = quotes[Math.floor((Math.random()*3))];
-
-  next();
-});
 
 
 // all environments
